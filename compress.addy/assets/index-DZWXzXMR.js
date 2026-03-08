@@ -9870,6 +9870,7 @@ const Mh = "@ffmpeg/ffmpeg",
 		dependencies: Jh,
 		devDependencies: ey
 	},
+	// https://unpkg.com/@ffmpeg/core-st/dist/
 	ty = (typeof process < "u", `ffmpeg-core.js`),
 	ny = {
 		corePath: ty
@@ -10094,7 +10095,7 @@ var hy = (e = {}) => {
 						}
 						return x + _
 					}
-				}), a = i.cwrap(o.mainName || "proxy_main", "number", ["number", "number"]), c("info", "ffmpeg-core loaded")
+				}), a = i.cwrap(o.mainName || "main", "number", ["number", "number"]), c("info", "ffmpeg-core loaded")
 			} else throw Error("ffmpeg.wasm was loaded, you should not load it again, use ffmpeg.isLoaded() to check next time.")
 		}, P = () => i !== null, z = (...R) => {
 			if (c("info", `run ffmpeg command: ${R.join(" ")}`), i === null) throw ga;

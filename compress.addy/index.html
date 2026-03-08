@@ -33,14 +33,28 @@
   body .bg-gray-100 {
     background-color: #1f2937 !important;
   }
+  body .bg-gray-50 {
+    background-color: #2d3748 !important; /* блоки Original/Compressed */
+    color: #e5e7eb !important;
+  }
   body .bg-white,
   body .bg-background {
     background-color: #2d3748 !important;
   }
-  /* Кнопка Compress Video — серый фон вместо синего */
+  /* Кнопка Compress Video */
   body .bg-primary {
-    background-color: #4b5563 !important; /* тёмно-серый */
-    color: #f9fafb !important;            /* светлый текст */
+    background-color: #4b5563 !important;
+    color: #f9fafb !important;
+  }
+  /* Кнопка Download (была синей) */
+  body .bg-blue-600 {
+    background-color: #4b5563 !important;
+    color: #f9fafb !important;
+  }
+  body .bg-blue-600:hover,
+  body .bg-blue-700 {
+    background-color: #6b7280 !important; /* светлее при наведении */
+    color: #ffffff !important;
   }
   /* Оверлей модалки */
   body .bg-black\/80 {
@@ -57,12 +71,16 @@
   body .text-gray-500 {
     color: #a0aec0 !important;
   }
-  /* делаем text-gray-800 светлым, чтобы был виден */
   body .text-gray-800 {
     color: #e5e7eb !important;
   }
-  body .text-primary-foreground {
-    color: #f9fafb !important; /* для совместимости с серой кнопкой */
+  body .text-primary-foreground,
+  body .text-white {
+    color: #f9fafb !important; /* белый текст на кнопках */
+  }
+  /* Подписи Original/Compressed */
+  body .text-gray-500.uppercase {
+    color: #9ca3af !important;
   }
 
   /* Границы */
@@ -95,16 +113,22 @@
 
   /* Эффекты при наведении и фокусе (без синего) */
   .hover\:bg-accent:hover {
-    background-color: #6b7280 !important; /* серый при наведении */
+    background-color: #6b7280 !important;
   }
   .hover\:text-accent-foreground:hover {
     color: #ffffff !important;
   }
   .focus-visible\:ring-ring:focus-visible {
-    --tw-ring-color: #9ca3af !important; /* серое кольцо фокуса */
+    --tw-ring-color: #9ca3af !important;
   }
 
-  /* Иконки */
+  /* Видеоплеер */
+  video {
+    background-color: #000000;  /* чёрный фон для видео */
+    border-radius: 0.5rem;      /* соответствует rounded-lg */
+  }
+
+  /* Иконки наследуют цвет текста */
   button svg,
   svg {
     color: currentColor;
