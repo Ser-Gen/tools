@@ -9870,7 +9870,7 @@ const Mh = "@ffmpeg/ffmpeg",
 		dependencies: Jh,
 		devDependencies: ey
 	},
-	ty = (typeof process < "u", `https://unpkg.com/@ffmpeg/core@${tf.devDependencies["@ffmpeg/core"].substring(1)}/dist/ffmpeg-core.js`),
+	ty = (typeof process < "u", `ffmpeg-core.js`),
 	ny = {
 		corePath: ty
 	};
